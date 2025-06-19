@@ -1,20 +1,80 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <title>アジ鯖 | Vote</title>
+<html lang="ja"><head>
+    <title>アジ鯖 | Votelink</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4169e1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .warning {
+            color: #ff0000;
+            font-size: 15px;
+        }
+
+        p {
+            color: #333;
+            font-size: 19px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 7px;
+        }
+    </style>
 </head>
 <body>
-  <script>
-    // ページが読み込まれたら新しいタブでリンクを開く
-    window.onload = function() {
-      window.open("https://minecraft.jp/servers/azisaba.net", "_blank");
-      window.open("https://monocraft.net/servers/xWBVrf1nqB2P0LxlMm2v", "_blank");
-    };
-  </script>
-  <p>リンクを新しいタブで自動的に開いています...</p>
-  <p></p>
-  <p></p>
-  <p>(このページはアジ鯖公式のものではありません。疑問などお問い合わせはtuna334までお願いします。)</p>
-</body>
-</html>
+<div class="container">
+    <script>
+        window.onload = function () {
+            var sites = [
+                'https://monocraft.net/servers/xWBVrf1nqB2P0LxlMm2v',
+                'https://minecraft.jp/servers/azisaba.net'
+            ];
+
+            var success = false;
+
+            sites.forEach(function (site) {
+                var newWindow = window.open(site, '_blank');
+                if (newWindow) {
+                    success = true;
+                }
+            });
+        };
+    </script>
+    <p>正常にページが開かれない場合は</p>
+    <p><b>ポップアップを常に許可</b> にしてこのページを再読み込みしてください。</p>
+    <img src="popupkyoka.png" alt="popupongazou">
+    <p>開かない場合は↓のリンクから</p>
+    <p> </p>
+    <h4>投票サイト一覧</h4>
+    <a href="https://minecraft.jp/servers/azisaba.net">minecraft.jp</a><br>
+    <a href="https://monocraft.net/servers/xWBVrf1nqB2P0LxlMm2v">monocraft.net</a><br>
+    <p class="warning"><b>このサイトは現在 Windows、Macのみ正常に動作します。</b></p>
+</div>
+
+
+
+<deepl-input-controller></deepl-input-controller></body></html>
